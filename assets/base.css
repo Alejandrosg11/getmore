@@ -128,6 +128,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   .header:not(.drawer-menu).page-width {
     padding-left: 5rem;
     padding-right: 5rem;
+    position: fixed;
   }
 
   .page-width--narrow {
@@ -638,8 +639,8 @@ h3 .icon-arrow,
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
+  width: 37px;
+  height: 37px;
 }
 
 .svg-wrapper > svg {
@@ -1256,7 +1257,7 @@ button.shopify-payment-button__button--unbranded {
   bottom: var(--buttons-border-width);
   left: var(--buttons-border-width);
   z-index: 1;
-  border-radius: var(--buttons-radius);/////////////////////////////////////////////
+  border-radius: 3rem;
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
       rgba(var(--color-button-text), var(--border-opacity)),
     0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
@@ -2348,10 +2349,6 @@ input[type='checkbox'] {
   background-color: rgb(var(--color-background));
 }
 
-.header-wrapper--border-bottom {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-}
-
 .header {
   display: grid;
   grid-template-areas: 'left-icons heading icons';
@@ -2794,26 +2791,29 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 1.2rem;
+  padding: 1.2rem 3rem 1.2rem 3rem;
   text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
 }
 
 .header__menu-item:hover {
-  color: rgb(var(--color-foreground));
+  color: #ffffff;
 }
 
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 .header__menu-item:hover span {
   text-decoration: underline;
   text-underline-offset: 0.3rem;
+  color: #ffffff;
 }
 
 details[open] > .header__menu-item {
   text-decoration: underline;
+  color: #ffffff;
 }
 
 details[open]:hover > .header__menu-item {
@@ -2833,6 +2833,7 @@ details[open] > .header__menu-item .icon-caret {
 
 .header__menu-item:hover .header__active-menu-item {
   text-decoration-thickness: 0.2rem;
+  color: #ffffff;
 }
 
 .header__submenu {
