@@ -392,7 +392,10 @@
     "update_country": "Actualizar país/región",
     "search": "Buscar",
     "popular_countries_regions": "Países o regiones populares",
-    "country_results_count": "{{ count }} países o regiones encontrados"
+    "country_results_count": "{{ count }} países o regiones encontrados",
+    "available_countries": {
+      "size": 2
+    }
   },
   "customer": {
     "account": {
