@@ -44,8 +44,9 @@
 .card--standard .card__inner {
   position: relative;
   box-sizing: border-box;
-  border-radius: var(--border-radius);
+  border-radius: 25rem;
   border: var(--border-width) solid rgba(var(--color-foreground), var(--border-opacity));
+  margin: 0 15rem 0 15rem;
 }
 
 .card--card:after,
@@ -120,6 +121,16 @@
 .card--media .card__inner .card__content {
   position: relative;
   padding: calc(var(--image-padding) + 1rem);
+  color: #ffffff;
+  background-color: #cbe346;
+  width: 39px;
+  height: 39px;
+  border-radius: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 .card__content {
@@ -127,7 +138,6 @@
   grid-template-rows: minmax(0, 1fr) max-content minmax(0, 1fr);
   padding: 1rem;
   width: 100%;
-  flex-grow: 1;
 }
 
 .card__content--auto-margins {

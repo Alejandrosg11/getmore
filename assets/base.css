@@ -138,23 +138,12 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
   .page-width-desktop {
     max-width: var(--page-width);
-    padding: 0 5rem;
   }
 }
 
 .isolate {
   position: relative;
   z-index: 0;
-}
-
-.section + .section {
-  margin-top: var(--spacing-sections-mobile);
-}
-
-@media screen and (min-width: 750px) {
-  .section + .section {
-    margin-top: var(--spacing-sections-desktop);
-  }
 }
 
 .element-margin-top {
@@ -1175,12 +1164,16 @@ deferred-media {
 /* component-button */
 /* Button - default */
 
-.button--secondary,
-.button--tertiary {
+.button--secondary {
   --color-button: var(--color-secondary-button);
   --color-button-text: var(--color-secondary-button-text);
   width: 269px;
   height: 53px;
+}
+
+.button--tertiary {
+  --color-button:  #282e47;
+  --color-button-text:  #282e47;
 }
 
 .button--tertiary {
@@ -1227,7 +1220,6 @@ button.shopify-payment-button__button--unbranded {
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
   appearance: none;
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
 }
 
 .button:before,
@@ -3259,6 +3251,38 @@ details-disclosure > details {
   scale: var(--zoom-in-ratio);
 }
 
+.carousel {
+  width: 76%;
+  height: 468px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-image: url("./ball-color-court.jpg");
+  background-size: cover; 
+}
+
+.carouseel__steps {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+}
+
+.carouseel__steps--dot {
+  width: 8px;
+  height: 8px;
+}
+
+.carouseel__arrows {
+  display: flex;
+  width: 120px;
+  justify-content: left;
+}
+
+.carouseel__title {
+  color: #ffffff;
+  font-size: 50px;
+}
+
 /* Animations */
 
 @media (prefers-reduced-motion: no-preference) {
@@ -3293,6 +3317,9 @@ details-disclosure > details {
   .scroll-trigger:not(.scroll-trigger--offscreen).animate--slide-in {
     animation: var(--animation-slide-in);
     animation-delay: calc(var(--animation-order) * 75ms);
+    margin: 0 1.5rem 0 1.5rem;
+    display: flex;
+    justify-content: space-around;
   }
 
   .scroll-trigger.scroll-trigger--design-mode.animate--fade-in,
