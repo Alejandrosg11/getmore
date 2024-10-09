@@ -46,7 +46,7 @@
   box-sizing: border-box;
   border-radius: 25rem;
   border: var(--border-width) solid rgba(var(--color-foreground), var(--border-opacity));
-  margin: 0 15rem 0 15rem;
+  margin: 0 11rem 0 11rem;
 }
 
 .card--card:after,

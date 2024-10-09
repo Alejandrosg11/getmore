@@ -885,6 +885,9 @@ summary::-webkit-details-marker {
 
 .grid:last-child {
   margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
 }
 
 .grid__item {
@@ -3251,8 +3254,43 @@ details-disclosure > details {
   scale: var(--zoom-in-ratio);
 }
 
+.footer {
+  width: 100%;
+  height: 203px;
+  background-color: #cbe346;
+  padding:  63px  78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 55px;
+  height: 55px;
+}
+
+.footer__links--menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__links--social-media {
+  display: flex;
+  justify-content: left;
+}
+
+.footer__links {
+  width: 40%;
+  li {
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 2rem;
+  }
+}
+
 .carousel {
-  width: 76%;
+  width: 63rem;
   height: 468px;
   display: flex;
   flex-direction: column;
@@ -3260,11 +3298,29 @@ details-disclosure > details {
   background-image: url("./ball-color-court.jpg");
   background-size: cover; 
 }
+@media only screen and (max-width: 1440px) and (min-width: 1000px) {
+  .carousel {
+    width: 52rem;
+  }
+}
+
+.second-banner {
+  height: 586px;
+  height: 100%;
+}
+
+.second-banner__container {
+  background-image: url("./action-athlete-ball.jpg");
+  background-size: cover;
+  height: 586px;
+}
 
 .carouseel__steps {
   display: flex;
-  width: 120px;
+  width: 100px;
   justify-content: space-between;
+  margin: 3.8rem 1.5rem 1rem 20rem; 
+
 }
 
 .carouseel__steps--dot {
@@ -3276,11 +3332,19 @@ details-disclosure > details {
   display: flex;
   width: 120px;
   justify-content: left;
+  margin: 2rem 1.5rem 1rem 19rem; 
 }
 
 .carouseel__title {
   color: #ffffff;
   font-size: 50px;
+  margin: 5rem 1.5rem 1rem 20rem; 
+}
+
+.carouseel__text {
+  color: #ffffff;
+  margin: 1rem 1.5rem 1rem 20rem; 
+
 }
 
 /* Animations */
@@ -3317,9 +3381,8 @@ details-disclosure > details {
   .scroll-trigger:not(.scroll-trigger--offscreen).animate--slide-in {
     animation: var(--animation-slide-in);
     animation-delay: calc(var(--animation-order) * 75ms);
-    margin: 0 1.5rem 0 1.5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .scroll-trigger.scroll-trigger--design-mode.animate--fade-in,
