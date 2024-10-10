@@ -120,7 +120,7 @@
       "settings": {
         "image": "shopify://shop_images/action-athlete-ball-342361_3x_52a8c6d8-87f9-4c95-9e6e-9fe00cc1fa26.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "small",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
