@@ -1267,3 +1267,13 @@ class BulkAdd extends HTMLElement {
 if (!customElements.get('bulk-add')) {
   customElements.define('bulk-add', BulkAdd);
 }
+
+const header = document.getElementById('header');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 450) { // Adjust this value based on when you want the color to change
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+});
