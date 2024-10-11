@@ -28,8 +28,8 @@ Este repositorio contiene el código fuente y el desarrollo de la prueba técnic
 ### Instalación:
 1. Clonar este repositorio:
     ```bash
-    git clone https://github.com/tu-usuario/tu-repositorio.git
-    cd tu-repositorio
+    git clone https://github.com/Alejandrosg11/getmore
+    cd getmore
     ```
 
 2. Instalar la **Shopify CLI** globalmente:
@@ -55,9 +55,9 @@ Este repositorio contiene el código fuente y el desarrollo de la prueba técnic
 - No se utilizaron frameworks JS como React, Vue o Angular, ni librerías CSS como Bootstrap o Tailwind, siguiendo las instrucciones de la prueba técnica.
 
 ## Repositorio
-Este proyecto está disponible en [GitHub](https://github.com/tu-usuario/tu-repositorio).
+Este proyecto está disponible en [GitHub](https://github.com/Alejandrosg11/getmore).
 
 ## Demo
 Puedes ver la tienda de desarrollo en Shopify aquí:  
-[Enlace a la tienda](https://tu-tienda.myshopify.com)  
+[Enlace a la tienda](https://pruebatecnicaalejandro.myshopify.com/)  
 **Contraseña**: demo1234
